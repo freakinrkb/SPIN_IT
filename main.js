@@ -88,12 +88,12 @@ window.addEventListener("mouseup", () => {
   mouseDown = false
 })
 
-// window.addEventListener("mousemove", (event) => {
-//   if (mouseDown) {
-//     const rgb = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
-//     mesh.material.color.setStyle(rgb);
-//   }
-// });
+window.addEventListener("mousemove", (event) => {
+  if (mouseDown) {
+    const rgb = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+    mesh.material.color.setStyle(rgb);
+  }
+});
 
 // rgb = [
 //   Math.round((event.pageX / window.innerWidth) * 255),
